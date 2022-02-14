@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 95%;
+    height: 100%;
+    background: center no-repeat;
+    background-image: url(../image/fans.jpg);
+    background-color: black;
+}
+.a{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width:104.25%;
+}
+.sidebar{
+ position: fixed;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+.sidebar .btn{
+    font-size: 50px;
+    background-color: red;
+    color: whitesmoke;
+    height: 100px;
+    width: 100px;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top:15px;
+    left:555px;
+    border-radius: 50%;
+}
+.sidebar .list{
+display: inline-block;
+position: relative;
+width: 100%;
+top: 25%;
+left: 5%;
+}
+.sidebar .list div{
+    display: none;
+    position: relative;
+   width: 660px;
+   height: 150px;
+   font-size: 50px;
+   padding-left: 40px;
+   text-transform: capitalize;
+   margin-top: 30px;
+    padding-top:5%;
+   border-bottom: oldlace solid 1px;
+}
+.sidebar .list div.active {
+    border-start-start-radius: 90px;
+    border-end-start-radius: 90px;
+    background-color: rgb(32, 146, 32);
+}
+.sidebar .list div:hover{
+     border-start-start-radius: 90px;
+     border-end-start-radius: 90px;
+     background-color: rgba(32, 146, 32, 0.432);
+}
+.sidebar .list div a{
+color: whitesmoke;
+}
+#keke{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+.sidebar #side{
+    width: 150px;
+}
+.navbar{
+    height: 300px;
+    display: flex;
+    position: relative;
+    left: 1%;
+    justify-self: flex-start;
+}
+.navbar .t-img{
+    width: 250%;
+}
+.navbar .navbar-brand{
+    position: relative;
+    left: 20%;
+}
+.navbar #navbarNav{
+    padding-left: 40%;
+}
+ion-icon{
+    position: relative;
+    top: 50px;
+    left: -80px;
+}
+span{
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
+.navbar #navbarNav ul li a {
+
+width: 50%;
+color: whitesmoke;
+}
+.navbar #navbarNav ul li{
+    width: 400%;
+    font-size: 80px;
+    padding-left: 20%;
+    display: flex;
+}
+
+#up{
+    position: relative;
+    top: 60px;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 10%;
+    left: 50%;
+}
+.card .card-body h3 {
+    font-size: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    color: whitesmoke;
+}
+.card .card-body h1 {
+    text-align: center;
+    font-size: 100px;
+    color: whitesmoke;
+    font-style:oblique;
+    text-transform: capitalize;
+}
+.card{
+    display: flex;
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: -20%;
+    margin-right: 50px;
+    border: 10px red solid;
+}
+.card:hover{
+box-shadow: blanchedalmond 0px 0px 10px 10px;
+top: 50px;
+}
+.card img{
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 60%;
+}
+.container .tag{
+    position: relative;
+    top: -200px;
+    color: whitesmoke;
+    left: -150px;
+}
+.container .tag h1{
+    width: max-content;
+    font-size: 150px;
+    color: whitesmoke;
+}
+.container .tag p {
+    width: max-content;
+    font-size: 80px;
+}
+.c1{
+background-color:rgba(23, 97, 3, 0.596);
+border: 10px green solid;
+}
+.c2{
+background-color: rgba(255, 251, 0, 0.404);
+border: 10px yellow solid;
+}
+.c3{
+background-color: rgba(255, 0, 0, 0.404);
+border: 10px red solid;
+}

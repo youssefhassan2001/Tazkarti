@@ -1,0 +1,336 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/register.css">
+     <title>Tazkarti</title>
+     <link rel = "icon" href = "data:image/jpeg;base64,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" type = "image/x-icon " style="width: 30%;">
+</head>
+<body>
+    <div class="sidebar">
+                <div class="btn btn-outline-danger" id="x">x</div>
+                <div class="list" id="list">
+                    <div class="home" id="home"><a href="">home</a></div>
+                    <br>
+                    <div class="stad" id="stad"><a href="">STADIUM LOCATIONS</a></div>
+                    <br>
+                    <div class="store" id="store"><a href="">OUR STORES</a></div>
+                    <br>
+                    <div class="faq" id="faq"><a href="">Faq</a></div>
+                    <br>
+                    <div class="about" id="about"><a href="">About tazkarti</a></div>
+                    <br>
+                    <div class="contact" id="contact"><a href="">contact us</a></div> 
+                </div>
+                <div class="social" id="social">
+                    <a class="face" href=""><img src="../image/facebook.png" alt="" srcset=""></a>
+                    <a class="insta" href=""><img src="../image/instagram.png" alt="" srcset=""></a>
+                    <a class="twit" href=""><img src="../image/twitter.png" alt="" srcset=""></a>
+                </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <div class="keke" id="keke"><img src="../image/menu.png"id= "side"; alt="" srcset=""></div>
+                <a class="navbar-brand" href="#"><img src="../image/logo1.svg" alt="" srcset="" class="t-img"></a>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="html/register.html">
+                            <ion-icon name="person-add" title="Register"></ion-icon>
+                                <span>Register</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <ion-icon name="lock-closed"></ion-icon>
+                                <span>Signin</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <ion-icon name="repeat-outline" id="up"></ion-icon>
+                                <span>updateinformation</span> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="first">
+            <h1>Sign up for Tazkarti Account</h1>
+            <p>Fill in all the required fields marked by (*).</p>
+            <div class="line" id="line"></div>
+            <div class="circles">
+                <div class="c active" id="cir1"><h1>1</h1></div>
+                <div class="c" id="cir2"><h1>2</h1></div>
+                <div class="c" id="cir3"><h1>3</h1></div>
+                <div class="c" id="cir4"><h1>4</h1></div>
+            </div>
+        </div>
+    <div class="container " id="stone">
+            <div class="tag"> 
+                <h1>Select Your Nationality</h1>
+                <p>Specify if you are Egyptian or from another country.</p></div>
+            <div class="row" style="width: max-content;">
+                <div class="card  c1" id="c1" >
+                    <img src="../image/egblack.png" class="card-img" alt="" id="im1">
+                    <div class="card-body">
+                        <h1 class="card-title" id="h1">Egyptian</h1>
+                    </div>
+                </div>
+                <div class="card c2" id="c2">
+                    <img src="../image/earth (1).png" class="card-img" alt="" id="im2">
+                    <div class="card-body">
+                        <h1 class="card-title" id="h2">Other Nationalities</h1>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    <div class="container two" id="sttwo">
+        <div class="header">
+            <h1>Contact Information</h1>
+            <p>Make sure you provide your personal mobile number and email address.</p>
+        </div>
+        <div class="form">
+            <label for="country" id="l1">Country of Nationality*</label>
+            <select class="form-select s1" id="country" disabled  aria-label="Default select example">       
+                <option selected>Egypt</option>
+                <option value="cairo">Angola</option>
+                <option value="Alexandria">Cameroun</option>
+                <option value="Giza">Niger</option>
+                <option value="port said">Tchad</option>
+                <option value="Suez">Comores</option>
+                <option value="Al mahalah">Ghana</option>
+                <option value="luxor">Libiyah</option>
+                <option value="al mansora">Muritaniyah</option>
+                <option value="tanta">Mali</option>
+            </select> 
+            <label for="country" id="l1">City*</label>
+            <select class="form-select s1" aria-label="Default select example">
+                <option selected>city</option>
+                <option value="cairo">cairo</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Giza">Giza</option>
+                <option value="port said">port said</option>
+                <option value="Suez">Suez</option>
+                <option value="Al mahalah">Al mahalah</option>
+                <option value="luxor">luxor</option>
+                <option value="al mansora">al mansora</option>
+                <option value="tanta">tanta</option>
+            </select>
+            <label for="Language" id="l1">Language of communication</label>
+            <select class="form-select s1" aria-label="Default select example">
+                <option selected>Arabic</option>
+                <option value="cairo">English</option>
+                <option value="Alexandria">Frensh</option> 
+            </select>
+            <label for="birth" id="l1">Date of birth*</label>
+            <label for="birth" id="required">This field is required.*</label>
+            <input type="datetime" id="birth" placeholder="dd/mm/yy">
+            <label for="email" id="l1">Email</label>
+            <label for="birth" id="required">This field is required.*</label>
+            <input type="email" id="email" placeholder="example@example.com">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked" id="chek">
+                I have read and agree to the <a href="#">Terms & Conditions</a>*
+                </label>
+            </div>
+            <label for="phone" id="phone">Mobile number*</label>
+            <div class="verify">
+               <select class="form-select val" aria-label="Default select example">
+                   <option value=" " selected></option>
+                    <option value="+20">+20</option>
+                    <option value="+440">+440</option>
+                    <option value="+350">+350</option>
+                    <option value="+966">+966</option>
+                    <option value="+009">+09</option>
+                </section>
+                <input type="tel" id="" pattern="[0-9]{10}">
+                <button disabled="disabled"class="btn btn-dark" id="btn">send</button>
+            </div>
+            <label for="phone" id="phone">Verification code*</label>
+            <div  class="verify" id="ver">
+                <input type="number" id="num" placeholder="123456">
+                <button disabled="disabled" class="btn btn-dark" id="btn1">verify</button>
+            </div>
+            <label for="">Tazkarti Account Type*</label>
+            <div class="radio">
+                <input type="radio" id="rad1" name="acount-type" class="radio1 form-check-input">
+                <label for="rad1" id="Entertainment"> Entertainment Account only (instant activation)</label>
+            </div>
+             <div class="radio">
+                <input type="radio" id="rad2" name="acount-type"class="radio1 form-check-input">
+                <label for="rad2" id="Sports">Sports and Entertainment Account</label>
+            </div>
+            <div class="button">
+                <button disabled class="btn-dark b1" id="Proceed">Proceed</button>
+                <button class="btn-dark b2" id="back">back</button>
+            </div>
+        </div>
+    </div>
+    <div class="container three" id="stthree">
+            <div class="tag"> 
+                <h1>Personal Information</h1>
+                <p>Make sure you provide your correct personal information as stated in your National ID.</p>
+            </div>
+            <div class="form">
+                <label for="name">Name in Arabic*</label>
+                <input type="text" placeholder="الاسم الاول" class="form-control" id="first">
+                <input type="text" placeholder="الاسم الاوسط" class="form-control" id="sec">
+                <input type="text" placeholder="الاسم الاخير" class="form-control" id="last">
+                <label for="">Mother Name in Arabic*</label>
+                <p>To ensure that your data is not being used by someone else,</p>
+                <label for="">Enter your mother’s name as stated in your birth certificate.</label>
+                <input type="text" placeholder="ادخل الاسم ثلاثيا" class="form-control" id="momName">
+                <label for="blood">Blood type</label>
+                <select name="" id="" class="form-control">
+                    <option value="">A+</option>
+                    <option value="">A-</option>
+                    <option value="">AB+</option>
+                    <option value="">AB-</option>
+                    <option value="">B+</option>
+                    <option value="">B-</option>
+                    <option value="">O-</option>
+                    <option value="">O+</option>
+                    <option value="">I DONT KNOW</option>
+                </select>
+                <Label>Gender</Label>
+                <select name="gender" id="" class="form-control">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="Prefer Not No Say">Prefer Not No Say</option>
+                </select>
+                <div class="buttons" id="button">
+                    <button disabled id="proceed2" class="btn-dark">Proceed</button>
+                    <button id="back2" class="btn-dark">back</button>
+                </div>
+            </div>
+        </div>
+    <div class="container four" id="stfour">
+            <div class="tag"> 
+                <h1>Documents</h1>
+                <p>Make sure you provide the required information as stated in your National ID.</p>
+            </div>
+            <div class="form3">
+               <label for="">National ID number*</label> 
+                <label for="id" id="required">This field is required.*</label>
+                <input type="text" maxlength="14" inputmode="numeric" placeholder="30000000000000" class="form-control" id="id">
+                <label for="">Image of National ID*</label>
+                <div class="im">
+                    <input type="file" name="" id="idfile" class="form-control">
+                    <div class="btn btn-primary">Attach image</div>
+                </div>
+                <p>Supported file types to upload are JPG and PNG.</p>
+                <p>The maximum file size to upload is 5 MB.</p>
+                <div class="card">
+                    <img src="../image/id-sample.png" alt="" srcset="">
+                    <h3>Example of approved image</h3>
+                </div>
+                <label for="file" id="Personal" class="Personal">Personal Photo*</label>
+                <div class="im2">
+                    <input type="file" name="" id="prfile" class="form-control">
+                    <div class="btn btn-primary">Attach image</div>
+                </div>
+                <div class="p">
+                    <p>Supported file types to upload are JPG and PNG.</p>
+                    <p>The maximum file size to upload is 5 MB.</p>
+                </div>
+                <div class="card2 ">
+                    <img src="../image/id-personal.png" alt="" srcset="">
+                    <ul class="dashed">
+                        <li>Right-side-up (not rotated) to be printed on your Tazkarti ID</li>
+                        <li>No more than 12 months old</li>
+                        <li>35-40 mm in width</li>
+                        <li>Face takes up 70-80% of it</li>
+                        <li>No sunglasses, hats, or caps</li>
+                        <li>Show you alone with neutral expression</li>
+                        <li>lear and of high quality</li>
+                    </ul>
+                </div>
+                <div class="buttons" id="#buttons">
+                    <button disabled id="proceed3" class="btn-dark">Proceed</button>
+                    <button id="back3" class="btn-dark">back</button>
+                </div>
+            </div>
+    </div>
+   <div class="headfive" id="headfive">
+        <h1>print your fan id</h1>
+   </div>
+    <div class="five " id="stfive">
+        <div class="fan1" >
+            <div class="holl"></div>
+                <h1 class="fanid">Tazkarti fan Id</h1>
+                <img src="../image/id-personal.png" alt="" srcset="" id="person">              
+                <div class="fan">
+                    <div class="nam">
+                         <h1 class="name">name:</h1>
+                         <h2 id="name" class="name">youssef hassan</h2>
+                    </div>
+                    <div class="num">
+                        <h1>phone number :</h1>
+                        <h2 id="phone-num">0112271026</h2>
+                    </div>
+                    <img src="../image/qr/qrcode_4592442_.png" alt="" srcset="" class="qr"> 
+                </div>
+        </div>
+    </div>
+    <div class="buttons" id="buttons">
+        <button class="btn btn-success b1" id="print">print</button>
+        <button class="btn btn-dark b2 " id="home1">home</button>
+    </div>
+    <footer class="footer">
+        <nav class="navbar navbar-expand-lg navbar-light footer " id="footer">
+        <div class="container-fluid">
+            <a class="navbar-brand ft" href="#"><img src="../image/tazkarti.svg" alt="" srcset="" class="f-img"></a>
+            </button>
+            <div class="collapse navbar-collapse" id="fotnav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">
+                            <span>home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">
+                            <span>STADIUM LOCATIONS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">
+                            <span>OUR STORES</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">
+                            <span>Faq</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">
+                            <span>About tazkarti</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">
+                            <span>contact us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+        <div class="copy">© 2021 youssef hassan. All rights reserved.</div>
+    </nav>
+        </footer>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/fanid.js"></script>
+</body>
+</html>

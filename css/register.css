@@ -1,0 +1,615 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background-color: black; */
+    background-color: rgba(226, 202, 202, 0.377);
+}
+
+nav{
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.644);
+    height: 150px;
+    border: transparent;
+}
+nav .keke{
+    margin-left: 30%;
+    margin-right: 30px;
+}
+nav .navbar-brand img{
+width: 150%;
+}
+nav #navbarNav{
+    margin-left: 20%;
+}
+nav #navbarNav li{
+    font-size: 50px;
+    margin-left: 30px;
+}
+nav #navbarNav li a{
+    color: whitesmoke;
+}
+nav #navbarNav li:hover{
+    border-bottom: whitesmoke 10px solid;
+}
+.first{
+width: 100%;
+height: 250px;
+background-color: white;
+text-align: center;
+}
+.first h1{
+    padding-top: 1%;
+    font-size: 60px;
+    font-weight: bold;
+}
+.first p{
+    font-size: 40px;
+}
+.first .line{
+    width: 45%;
+    height: 10px;
+    margin-top: 1%;
+    background-color: green;
+}
+.first .circles{
+    display: flex;
+    position: absolute;
+    top: 360px;
+    left: 44%;
+}
+.first .circles .c{
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: gray 5px solid;
+    margin-right: 200px;
+    color: gray;
+    font-size: 60px;
+    background-color: white;
+}
+.first .circles .c.active{
+     border: green 5px solid;
+     color: green;
+}
+.first .circles .c h1{
+    position: relative;
+    text-align: center;
+    left: 25%;
+    font-weight: normal;
+
+}
+.sidebar{
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 0;
+    z-index: 1;
+}
+.sidebar .btn{
+    display: none;
+    position: relative;
+    left: 80%;
+    top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.sidebar .list{
+    position: relative;
+    top: 15%;
+    margin-top: 100%;
+    left: 30px;
+}
+.sidebar .list div{
+    width: 90%;
+    font-size: 50px;
+    text-transform: capitalize;
+    border-bottom: 5px white solid;
+    margin-right: 10px;
+    position: relative;
+    left: -400px;
+
+}
+.sidebar .list div a{
+    position: relative;
+    color: white;
+    /* margin-left: ; */
+    /* padding-left: ; */
+
+}
+.sidebar .list div a:hover {
+    left: 40px;
+ }
+
+.sidebar .social{
+    position: relative;
+    top: 45%;
+    left: -800px;
+}
+.sidebar .social a{
+    margin-right: 20px;
+}
+.tag{
+    margin-top: 100px;
+    margin-left: 250px;
+    width: 200%;
+
+}
+.tag h1{
+    font-size: 80px;
+}
+.tag p{
+    position: relative;
+    right: 150px;
+    font-size: 50px;
+}
+.card{
+     width:600px;
+     height: 450px;
+    background-color:white;
+    border: 10px gray solid;
+    margin-right: 100px;
+    margin-left: 50px;
+    margin-top: 100px;
+    border-radius: 10%;
+    border: transparent;
+}
+.card img{
+    display: flex;
+    width: 40%;
+    align-self: center;
+    margin-top: 50px;
+}
+.card .card-body
+{
+    
+    text-align: center;
+}
+.card .card-body h1{
+    font-size: 50px;
+    color: gray;
+}
+
+
+.two{
+    position: relative;
+    top: 3%;
+}
+.two .header h1{
+font-size: 60px;
+text-align: center;
+font-weight: bold;
+}
+.two .header p{
+    font-size: 40px;
+    text-align: center;
+}
+.two .form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.two .form label{
+    text-align: left;
+    font-size: 60px;
+    position: relative;
+    left: -5px;
+}
+.two .form input{
+    width: 90%;
+    font-size: 50px;
+    font-weight: lighter;
+}
+.two .form .s1{
+    font-size: 70px;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.two .form .button *{
+width: 400px;
+height: 150px;
+font-size: 50px;
+margin-left: 50px;
+margin-top: 100px;
+border: transparent;
+}
+.two .form .button .b1{
+    background-color: rgb(180, 173, 173);
+}
+.two .form .button .b2{
+    background-color: rgb(121, 103, 103);
+}
+.two .form .button .b2:hover{
+    background-color: rgb(131, 125, 125);
+
+}
+.two .form .verify{
+    height: 100px;
+    display: flex;
+}
+.two .form .verify button{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 3px;
+    font-size: 50px;
+}
+.two .form .verify button:hover{
+    background-color: green;
+}
+option:hover{
+    color: white;
+    background-color: green;
+}
+#required{
+    font-size: 40px;
+    color: red;
+}
+.form-check{
+    display: flex;
+}
+#flexCheckChecked{
+    position: relative;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+}
+
+#chek{
+    position: relative;
+    top: 50%;
+    
+}
+.radio{
+    display: flex;
+}
+#rad1,#rad2{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 30px;
+    top: 25px;
+}
+
+.val{
+    position: relative;
+    left: -50px;
+    font-size: 50px;
+    width: 200px;
+    height: 100px;
+}
+#num{
+    width: 800px;
+    height: 100px;
+    font-size: 40px;
+    position: relative;
+    left: -40px;
+    top: -5px;
+}
+#btn1{
+    position: relative;
+    left: -15px;
+    top: -15px;
+}
+#phone{
+    position: relative;
+    top: -20%;
+}
+#ver{
+    position: relative;
+    top: -20%;
+}
+.three .tag p{
+    position: relative;
+    right: 600px;
+}
+.three .form label{
+    color: rgb(85, 83, 83);
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 50px;
+}
+.three .form input{
+font-size: 50px;
+text-align: right;
+}
+.three .form p{
+    font-size: 40px;
+}
+.three .form select{
+    height: 100px !important;
+    font-size: 50px;
+}
+
+.three .form .buttons{
+    margin-top: 100px;
+    text-align: center;
+}
+.three .form .buttons button{
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-transform: capitalize;
+    background-color: grey;
+    width: 40%;
+    border: transparent;
+}
+#proceed2.abled{
+    background-color: green;
+}
+#back2:hover {
+    background-color: rgb(97, 91, 91);
+}
+.form3 label{
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(83, 81, 81);
+}
+.form3 p {
+    width: 100%;
+    font-size: 40px;
+}
+.form3 input{
+    font-size: 50px;
+    width: 100%;
+}
+.form3 .im, .im2 {
+    display: flex;
+    position: relative;
+    left: -1%;
+}
+.form3 .im div, .im2 div {
+    font-size: 50px;
+}
+.form3 .Personal,
+.form3 .im2 
+,.form3 .p
+,.form3 .card2{
+    position: relative;
+    top: -50px;
+}
+
+.form3 .card{
+    position: relative;
+    bottom: 100px;
+    left: -5%;
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(221, 203, 203);
+    border: transparent;
+    border-radius: 0;
+}
+.form3 .card img{
+    display: flex;
+    margin-left: 30px;
+    align-self: start;
+}
+.form3 .card h3{
+    display: flex;
+    align-self: center;
+    position: relative;
+    bottom: 250px;
+    left: 20%;
+    top: -45%;
+    font-size: 41px;
+    font-weight: 900;
+}
+.form3 .card2{
+    display: flex;
+     width: 100%;
+     height: 23%;
+    background-color: rgb(221, 203, 203);
+}
+.form3 .card2 img{
+    align-self: flex-start;
+    width: 30%;
+    height: 80%;
+    margin: 50px;
+}
+.form3 .card2 ul{
+    margin-top: 30px;
+    font-size: 35px;
+    list-style-type:none;
+    font-weight: bold;
+}
+ul.dashed>li:before {
+    content: "-";
+margin-right: 5px;
+}
+.form3 .buttons{
+    display: flex;
+    font-size: 80px;
+    padding: 10px;
+    height: 6%;
+    border: 0;
+
+}
+.form3 .buttons #proceed3{
+    margin-right: 50px;
+    width: 50%;
+    border: transparent;
+}
+.form3 .buttons #back3 {
+    width: 50%;
+    background-color: rgb(49, 46, 46);
+    border: transparent;        
+}
+.form3 .buttons #back3:hover{
+    background-color: rgb(170, 165, 165);
+}
+#proceed3.abled{
+    background-color: green;
+}
+.headfive{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.headfive h1{
+    position: relative;
+    left: 100px;
+    text-align: center;
+    font-size: 150px;
+    color: green;
+    text-transform: capitalize;
+}
+.five{
+    width: 28%;
+    position: relative;
+    left: 37%;
+    height: 70%;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10%;
+    background-color: green;
+    border:  10px gray dotted;
+}
+.five .holl{
+    position: relative;
+     margin-top: 20px;
+    left: 40%;
+    width: 300px;
+    height: 50px;
+    background-color:white;
+    border-radius: 10%;
+} 
+.five .fanid{
+      margin-top: 5%;
+      text-align: center;
+      background-color: rgb(19, 105, 139);
+}
+.five h1{ 
+    position: relative;
+    font-size: 90px;
+    color: white;
+    text-transform: capitalize;
+}
+.five #person{
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    right: 32%;
+}
+.five h2{
+    font-size: 70px;
+    color: white;
+}
+.five .nam{
+    display: flex;
+    position: absolute;
+    top: 51%;
+    left: 5%;
+}
+.five .nam h2{
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+.five .num{
+    display: flex;
+    position: absolute;
+    top: 58%;
+    left: 5%;
+}
+.five .num h2{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.five .qr{
+    width: 35%;
+    position: absolute;
+    bottom: 80px;
+    left: 33%;
+}
+.five img{
+    width: 30%;
+}
+#buttons {
+    display: flex;
+    width: 20%;
+    height: 10%;
+    position: relative;
+    left: 41%;
+}
+.buttons .b1,
+.buttons .b2,
+#buttons *{
+    font-size: 50px;
+    margin-top: 10%;
+    width: 45%;
+    height: 80%;
+    margin-right: 20px;
+}
+#fotnav{
+    margin-left: 30%;
+}
+footer nav .container-fluid a.ft {
+    position: relative;
+    left: 28%;
+}
+#fotnav ul li{
+    margin-left: 50px;
+}
+#fotnav ul li a{
+    color: blanchedalmond;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.copy{
+    position: relative;
+    left: -18%;
+    width: 800px;
+    color: blanchedalmond;
+    font-size: 35px;
+}
+#cities{
+    background-color: white;
+    font-size: 30px;
+}
+#Proceed{
+    background-color: gray;
+}
+#Proceed.abled{
+    background-color: green;
+}
+#stone {
+    display: none;
+}
+
+#sttwo {
+    display: none;
+}
+
+#stthree {
+    display: none;
+}
+
+#stfour {
+    display: none;
+}
+#stfive{
+    display: block;
+}
+#buttons{
+    display: block;
+}
+#headfive{
+    display: block;
+}
+.footer {
+    background-color: rgb(54, 53, 53);
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+}
